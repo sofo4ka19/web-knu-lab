@@ -13,7 +13,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background-color: var(--medium1-color);
+    background-color: var(--light-color);
 }
 .container {
     max-width: 1200px;
@@ -21,9 +21,9 @@ body {
     padding: 0 15px;
 }
 .header {
-    background: var(--light-color);
+    background: var(--medium1-color);
     padding: 20px 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--medium2-color);
 }
 .header-content {
     display: flex;
@@ -37,34 +37,33 @@ body {
 .logo-img {
     width: 60px;
     height: 60px;
-    background-color: #2c3e50;
     margin-right: 15px;
 }
 .logo-text h1 {
     font-size: 24px;
-    color: #2c3e50;
+    color: var(--dark-color);
     margin-bottom: 5px;
 }
 .logo-text p {
     font-size: 14px;
-    color: #7f8c8d;
+    color: var(--subdark-color);
 }
 .contact-info {
     text-align: right;
 }
 .contact-info p {
     margin-bottom: 5px;
-    color: #7f8c8d;
+    color: var(--subdark-color);
 }
 .contact-info a {
-    color: #7f8c8d;
+    color: var(--subdark-color);
     text-decoration: none;
 }
 .contact-info a:hover {
     text-decoration: underline;
 }
 .nav {
-    background-color: #2c3e50;
+    background-color: var(--dark-color);
 }
 .nav-list {
     display: flex;
@@ -80,18 +79,25 @@ body {
     font-size: 16px;
 }
 .nav-link:hover {
-    color: #3498db;
+    color: var(--medium2-color);
 }
 .hero {
     position: relative;
     height: 500px;
     overflow: hidden;
     margin-bottom: 30px;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
+
 .slider {
     height: 100%;
     position: relative;
 }
+
 .slide {
     position: absolute;
     width: 100%;
@@ -101,30 +107,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3498db;
-    color: white;
-    font-size: 48px;
+    /* background-color: #3498db; */
+    background-size: cover;
+    background-position: center;
 }
 .slide.active {
     opacity: 1;
-}
-.slide:nth-child(1) {
-    background-color: #3498db;
-    background-image: url("/api/placeholder/1200/350");
-    background-size: cover;
-    background-position: center;
-}
-.slide:nth-child(2) {
-    background-color: #2ecc71;
-    background-image: url("/api/placeholder/1200/350");
-    background-size: cover;
-    background-position: center;
-}
-.slide:nth-child(3) {
-    background-color: #e74c3c;
-    background-image: url("/api/placeholder/1200/350");
-    background-size: cover;
-    background-position: center;
 }
 .slider-nav {
     position: absolute;
@@ -165,7 +153,7 @@ body {
 }
 .sidebar-title {
     padding: 10px;
-    background-color: #2c3e50;
+    background-color:  var(--dark-color);
     color: white;
     text-align: center;
     margin-bottom: 20px;
@@ -179,11 +167,11 @@ body {
     border-bottom: 1px solid #e0e0e0;
 }
 .category-link {
-    color: #2c3e50;
+    color:  var(--dark-color);
     text-decoration: none;
 }
 .category-link:hover {
-    color: #3498db;
+    color: var(--subdark-color);
 }
 .subcategory-list {
     list-style: none;
@@ -224,11 +212,11 @@ body {
 .product-price {
     font-size: 18px;
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--dark-color);
     margin-bottom: 10px;
 }
 .product-btn {
-    background-color: #2c3e50;
+    background-color: var(--dark-color);
     color: white;
     border: none;
     padding: 8px 15px;
@@ -236,7 +224,7 @@ body {
     transition: background-color 0.3s;
 }
 .product-btn:hover {
-    background-color: #3498db;
+    background-color: var(--subdark-color);
 }
 .pagination {
     display: flex;
@@ -252,7 +240,7 @@ body {
     text-decoration: none;
 }
 .pagination a.active {
-    background-color: #2c3e50;
+    background-color: var(--dark-color);
     color: white;
 }
 .about {
@@ -264,14 +252,14 @@ body {
 .about-title {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: var(--dark-color);
 }
 .about-text {
     color: #7f8c8d;
     line-height: 1.6;
 }
 .footer {
-    background-color: #2c3e50;
+    background-color: var(--dark-color);
     color: #ecf0f1;
     padding: 30px 0;
 }
@@ -305,7 +293,7 @@ body {
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
-    border-top: 1px solid #34495e;
+    border-top: 1px solid var(--subdark-color);
     font-size: 14px;
 }
 
@@ -351,13 +339,13 @@ body {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: #7f8c8d;
+    color: var(--medium2-color);
 }
 .modal-title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
-    color: #2c3e50;
+    color: var(--dark-color);
 }
 .modal-form-group {
     margin-bottom: 15px;
@@ -365,7 +353,7 @@ body {
 .modal-form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #7f8c8d;
+    color: var(--medium2-color);
 }
 .modal-form-group input,
 .modal-form-group textarea {
@@ -378,7 +366,7 @@ body {
     resize: vertical;
 }
 .modal-btn {
-    background-color: #2c3e50;
+    background-color: var(--dark-color);
     color: white;
     border: none;
     padding: 12px 25px;
@@ -388,7 +376,7 @@ body {
     margin-top: 10px;
 }
 .modal-btn:hover {
-    background-color: #3498db;
+    background-color: var(--subdark-color);
 }
 .modal-form-group input:invalid,
 .modal-form-group textarea:invalid {
@@ -421,4 +409,64 @@ body {
 
 .slider-dot.active {
     background-color: white;
+}
+/* Додати в кінець CSS файлу */
+@media screen and (max-width: 992px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .nav-list {
+        flex-wrap: wrap;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-col {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        height: 300px;
+    }
+    
+    .nav-item {
+        padding: 10px;
+    }
+    
+    .modal-content {
+        padding: 15px;
+        width: 90%;
+    }
 }
