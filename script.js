@@ -82,8 +82,6 @@ function resetTimer() {
     }, 4000);
 }
 
-// Ініціалізація слайдера при завантаженні
-document.addEventListener('DOMContentLoaded', initSlider);
 
 //Pagination
 // Додати код для пагінації книг
@@ -138,6 +136,7 @@ function setupPagination() {
     // Показуємо першу сторінку за замовчуванням
     showPage(1);
 }
-
-// Запускаємо пагінацію після завантаження сторінки
-document.addEventListener('DOMContentLoaded', setupPagination);
+document.addEventListener('DOMContentLoaded', function() {
+    initSlider();
+    setupPagination();
+});
