@@ -94,3 +94,60 @@ nextBtn.addEventListener('click', () => {
 setInterval(() => {
     showSlide(currentSlide + 1);
 }, 4000);
+
+//Pagination
+// Додати код для пагінації книг
+function setupPagination() {
+    const productsContainer = document.querySelector('.products');
+    const allProducts = Array.from(productsContainer.querySelectorAll('.product'));
+    const paginationContainer = document.querySelector('.pagination');
+    const productsPerPage = 6;
+    let currentPage = 1;
+    
+    // Очищаємо пагінацію і заповнюємо її заново
+    paginationContainer.innerHTML = '';
+    
+    const totalPages = Math.ceil(allProducts.length / productsPerPage);
+    
+    // Створюємо кнопки пагінації
+    for (let i = 1; i <= totalPages; i++) {
+        const pageLink = document.createElement('a');
+        pageLink.href = '#';
+        pageLink.textContent = i;
+        if (i === 1) pageLink.classList.add('active');
+        
+        pageLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            currentPage = i;
+            showPage(currentPage);
+            
+            // Оновлюємо активну кнопку
+            document.querySelectorAll('.pagination a').forEach(link => {
+                link.classList.remove('active');
+            });
+            pageLink.classList.add('active');
+        });
+        
+        paginationContainer.appendChild(pageLink);
+    }
+    
+    // Функція для відображення поточної сторінки
+    function showPage(page) {
+        const startIndex = (page - 1) * productsPerPage;
+        const endIndex = startIndex + productsPerPage;
+        
+        allProducts.forEach((product, index) => {
+            if (index >= startIndex && index < endIndex) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+    
+    // Показуємо першу сторінку за замовчуванням
+    showPage(1);
+}
+
+// Запускаємо пагінацію після завантаження сторінки
+document.addEventListener('DOMContentLoaded', setupPagination);

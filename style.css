@@ -310,6 +310,7 @@ body {
 }
 
 /* Modal styles */
+/* Оновлений стиль для модального вікна */
 .modal {
     display: none;
     position: fixed;
@@ -321,10 +322,15 @@ body {
     z-index: 1000;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
+
 .modal.show {
     display: flex;
+    opacity: 1;
 }
+
 .modal-content {
     background-color: #fff;
     padding: 30px;
@@ -332,6 +338,12 @@ body {
     width: 100%;
     max-width: 500px;
     position: relative;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
 }
 .modal-close {
     position: absolute;
@@ -377,6 +389,16 @@ body {
 }
 .modal-btn:hover {
     background-color: #3498db;
+}
+.modal-form-group input:invalid,
+.modal-form-group textarea:invalid {
+    border: 1px solid #e74c3c;
+    box-shadow: 0 0 3px #e74c3c;
+}
+
+.modal-form-group input:focus:invalid,
+.modal-form-group textarea:focus:invalid {
+    outline-color: #e74c3c;
 }
 .slider-dots {
     position: absolute;
