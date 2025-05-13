@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorld - Найкращий книжковий магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img class="logo-img" src="img/logo.jpg" alt="logo">
+                <div class="logo-text">
+                    <h1>BookWorld</h1>
+                    <p>найкращий книжковий магазин</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p class="phone-number">+38(044) 123-45-67</p>
+                <p class="phone-number">+38(044) 123-45-67</p>
+                <a href="#" id="callback-btn">Зворотний зв'язок</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item "><a href="index.html" class="nav-link active">Головна</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Каталог</a></li>
+                <li class="nav-item"><a href="delivery.html" class="nav-link">Доставка та оплата</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Кошик</a></li>
+            </ul>
+        </div>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero">
+        <div class="slider">
+            <img class="slide" src="img/slider1.avif">
+            <img class="slide" src="img/slider2.avif">
+            <img class="slide" src="img/slider3.avif">
+            <img class="slide" src="img/slider4.avif">
+            <img class="slide" src="img/slider5.avif">
+            <img class="slide active" src="img/slider6.avif">
+        </div>
+        <div class="slider-nav">
+            <button id="prev-slide">&#x2B9C;</button>
+            <button id="next-slide">&#x2B9E;</button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Головна</a> / <span>Кошик</span>
+        </div>
+        
+        <div class="cart-container">
+            <h1 class="cart-title">Кошик</h1>
+            
+            <!-- Якщо кошик порожній -->
+            <div class="cart-empty" style="display: none;">
+                <div class="cart-empty-icon">
+                    <img src="img/empty-cart.png" alt="Порожній кошик">
+                </div>
+                <h2>Ваш кошик порожній</h2>
+                <p>Але це ніколи не пізно виправити!</p>
+                <a href="catalog.html" class="continue-shopping-btn">Перейти до каталогу</a>
+            </div>
+            
+            <!-- Якщо в кошику є товари -->
+            <div class="cart-content">
+                <div class="cart-items">
+                    <!-- Заголовки таблиці -->
+                    <div class="cart-header">
+                        <div class="cart-col cart-product-col">Товар</div>
+                        <div class="cart-col cart-price-col">Ціна</div>
+                        <div class="cart-col cart-quantity-col">Кількість</div>
+                        <div class="cart-col cart-total-col">Сума</div>
+                        <div class="cart-col cart-remove-col"></div>
+                    </div>
+                    
+                    <!-- Товар 1 -->
+                    <div class="cart-item">
+                        <div class="cart-col cart-product-col">
+                            <div class="cart-product-info">
+                                <div class="cart-product-image">
+                                    <img src="img/book1.jpg" alt="Книга 1">
+                                </div>
+                                <div class="cart-product-details">
+                                    <h3 class="cart-product-title">Гаррі Поттер і філософський камінь</h3>
+                                    <p class="cart-product-author">Джоан Роулінг</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-col cart-price-col">
+                            <span class="cart-price">350 грн</span>
+                        </div>
+                        <div class="cart-col cart-quantity-col">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1" max="10">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-col cart-total-col">
+                            <span class="cart-item-total">350 грн</span>
+                        </div>
+                        <div class="cart-col cart-remove-col">
+                            <button class="remove-item-btn">×</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 2 -->
+                    <div class="cart-item">
+                        <div class="cart-col cart-product-col">
+                            <div class="cart-product-info">
+                                <div class="cart-product-image">
+                                    <img src="img/book2.jpg" alt="Книга 2">
+                                </div>
+                                <div class="cart-product-details">
+                                    <h3 class="cart-product-title">1984</h3>
+                                    <p class="cart-product-author">Джордж Орвелл</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-col cart-price-col">
+                            <span class="cart-price">290 грн</span>
+                        </div>
+                        <div class="cart-col cart-quantity-col">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="2" min="1" max="10">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-col cart-total-col">
+                            <span class="cart-item-total">580 грн</span>
+                        </div>
+                        <div class="cart-col cart-remove-col">
+                            <button class="remove-item-btn">×</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 3 -->
+                    <div class="cart-item">
+                        <div class="cart-col cart-product-col">
+                            <div class="cart-product-info">
+                                <div class="cart-product-image">
+                                    <img src="img/book3.jpg" alt="Книга 3">
+                                </div>
+                                <div class="cart-product-details">
+                                    <h3 class="cart-product-title">Майстер і Маргарита</h3>
+                                    <p class="cart-product-author">Михайло Булгаков</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-col cart-price-col">
+                            <span class="cart-price">320 грн</span>
+                        </div>
+                        <div class="cart-col cart-quantity-col">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1" max="10">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-col cart-total-col">
+                            <span class="cart-item-total">320 грн</span>
+                        </div>
+                        <div class="cart-col cart-remove-col">
+                            <button class="remove-item-btn">×</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-actions">
+                    <div class="cart-promo">
+                        <h3>Промокод</h3>
+                        <div class="promo-input-group">
+                            <input type="text" placeholder="Введіть промокод">
+                            <button class="apply-promo-btn">Застосувати</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <h3>Ваше замовлення</h3>
+                        <div class="summary-row">
+                            <span>Вартість товарів:</span>
+                            <span>1250 грн</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Знижка:</span>
+                            <span class="discount">0 грн</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Загальна сума:</span>
+                            <span class="total-price">1250 грн</span>
+                        </div>
+                        <a href="checkout.html" class="checkout-btn">Оформити замовлення</a>
+                        <a href="catalog.html" class="continue-shopping-link">Продовжити покупки</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="recommended-products">
+            <h2 class="section-title">Рекомендовані товари</h2>
+            <div class="products">
+                <!-- Рекомендований товар 1 -->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="img/book4.jpg" alt="Книга 4">
+                    </div>
+                    <h3 class="product-title">Маленький принц</h3>
+                    <p class="product-price">220 грн</p>
+                    <button class="product-btn">Додати в кошик</button>
+                </div>
+                
+                <!-- Рекомендований товар 2 -->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="img/book5.jpg" alt="Книга 5">
+                    </div>
+                    <h3 class="product-title">Ідіот</h3>
+                    <p class="product-price">280 грн</p>
+                    <button class="product-btn">Додати в кошик</button>
+                </div>
+                
+                <!-- Рекомендований товар 3 -->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="img/book6.jpg" alt="Книга 6">
+                    </div>
+                    <h3 class="product-title">Тіні забутих предків</h3>
+                    <p class="product-price">240 грн</p>
+                    <button class="product-btn">Додати в кошик</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-col">
+                    <li><h3>Про компанію</h3></li>
+                    <li><p>© 2012 - 2025 ТОВ «BookWorld»</p></li>
+                    <li><p>info@bookworld.ua</p></li>
+                </ul>
+                <ul class="footer-col">
+                    <li><h3>Навігація</h3></li>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Доставка та оплата</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+                <ul class="footer-col">
+                    <li><h3>Розробка сайту</h3></li>
+                    <li><p>Розробка «BookWorld Design»</p></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2012 - 2025 ТОВ «BookWorld». Всі права захищені.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="callback-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">ЗВОРОТНИЙ ЗВ'ЯЗОК</h2>
+            <form id="callback-form">
+                <div class="modal-form-group">
+                    <label for="name">Ваше ім'я *</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <button type="submit" class="modal-btn">НАДІСЛАТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

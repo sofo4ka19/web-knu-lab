@@ -476,7 +476,7 @@ body {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: var(--medium2-color);
+    color: var(--subdark-color);
 }
 
 .modal-title {
@@ -493,7 +493,7 @@ body {
 .modal-form-group label {
     display: block;
     margin-bottom: 5px;
-    color: var(--medium2-color);
+    color: var(--subdark-color);
 }
 
 .modal-form-group input,
@@ -651,5 +651,364 @@ body {
     .modal-content {
         padding: 15px;
         width: 90%;
+    }
+}
+/* Стилі для сторінки доставки */
+
+.delivery-hero {
+    background-color: var(--medium2-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.delivery-hero-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.delivery-hero-subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.delivery-info {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: var(--dark-color);
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--medium2-color);
+}
+
+/* Стилі для способів доставки */
+.delivery-section, .payment-section, .delivery-process, 
+.delivery-terms, .map-section, .faq-section {
+    margin-bottom: 40px;
+}
+
+.delivery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.delivery-method {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    border-left: 4px solid var(--medium2-color);
+}
+
+.delivery-method-icon {
+    flex: 0 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.delivery-logo {
+    max-width: 100%;
+    max-height: 60px;
+}
+
+.delivery-details {
+    flex: 1;
+}
+
+.delivery-details h3 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.delivery-price {
+    font-weight: bold;
+    color: var(--subdark-color);
+    margin: 10px 0;
+}
+
+.delivery-promo {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.store-address {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.delivery-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.delivery-feature {
+    background-color: var(--medium1-color);
+    color: var(--dark-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Стилі для способів оплати */
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.payment-method {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.payment-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-icon img{
+    width: 100%;
+}
+
+.payment-method h3 {
+    color: var(--dark-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.payment-method p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Стилі для процесу роботи */
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.process-step {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+.process-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--medium2-color);
+}
+
+.step-number {
+    background-color: var(--dark-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+}
+
+.step-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-color: var(--medium1-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-icon img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.process-step h3 {
+    color: var(--dark-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Стилі для умов доставки */
+.terms-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.terms-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.terms-card h3 {
+    color: var(--dark-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.terms-card p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Стилі для карти */
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.store-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.store-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-info-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+.store-info-item h3 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+/* Стилі для FAQ */
+.faq-container {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.faq-question {
+    color: var(--dark-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--subdark-color);
+}
+
+.faq-item.active .faq-question::after {
+    content: "-";
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #666;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Адаптивні стилі для сторінки доставки */
+@media screen and (max-width: 992px) {
+    .payment-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .delivery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .process-step:not(:last-child)::after {
+        display: none;
+    }
+    
+    .terms-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .store-info {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .delivery-method {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .delivery-method-icon {
+        margin: 0 auto 15px;
+    }
+    
+    .delivery-features {
+        justify-content: center;
     }
 }
