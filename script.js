@@ -140,10 +140,20 @@ document.addEventListener('DOMContentLoaded', function() {
     initSlider();
     setupPagination();
 });
+
+// Burger-menu improved functionality
 const burgerMenu = document.querySelector('.burger-menu');
 const navList = document.querySelector('.nav-list');
 
 burgerMenu.addEventListener('click', function() {
     navList.classList.toggle('show');
     burgerMenu.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav') && navList.classList.contains('show')) {
+        navList.classList.remove('show');
+        burgerMenu.classList.remove('active');
+    }
 });

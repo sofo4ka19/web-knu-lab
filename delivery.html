@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка та оплата - BookWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img class="logo-img" src="img/logo.jpg" alt="logo">
+                <div class="logo-text">
+                    <h1>BookWorld</h1>
+                    <p>найкращий книжковий магазин</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p class="phone-number">+38(044) 123-45-67</p>
+                <p class="phone-number">+38(044) 123-45-67</p>
+                <a href="#" id="callback-btn">Зворотний зв'язок</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Каталог</a></li>
+                <li class="nav-item"><a href="delivery.html" class="nav-link active">Доставка та оплата</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Кошик</a></li>
+            </ul>
+        </div>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Головна</a> / <span>Доставка та оплата</span>
+        </div>
+        
+        <h1 class="page-title">Доставка та оплата</h1>
+        
+        <div class="delivery-info">
+            <section class="delivery-section">
+                <h2 class="section-title">Способи доставки</h2>
+                
+                <div class="delivery-method">
+                    <img src="img/nova-poshta.png" alt="Нова пошта" class="delivery-logo">
+                    <div class="delivery-details">
+                        <h3>Нова пошта</h3>
+                        <p>Доставка по всій Україні протягом 1-2 днів у відділення або поштомат.</p>
+                        <p>Вартість доставки: від 60 грн</p>
+                    </div>
+                </div>
+                
+                <div class="delivery-method">
+                    <img src="img/ukrposhta.png" alt="Укрпошта" class="delivery-logo">
+                    <div class="delivery-details">
+                        <h3>Укрпошта</h3>
+                        <p>Доставка по всій Україні протягом 3-5 днів у відділення.</p>
+                        <p>Вартість доставки: від 40 грн</p>
+                    </div>
+                </div>
+                
+                <div class="delivery-method">
+                    <img src="img/courier.png" alt="Кур'єр" class="delivery-logo">
+                    <div class="delivery-details">
+                        <h3>Кур'єрська доставка</h3>
+                        <p>Доставка кур'єром по Києву протягом дня.</p>
+                        <p>Вартість доставки: 100 грн</p>
+                        <p>При замовленні від 1000 грн - безкоштовно</p>
+                    </div>
+                </div>
+                
+                <div class="delivery-method">
+                    <img src="img/pickup.png" alt="Самовивіз" class="delivery-logo">
+                    <div class="delivery-details">
+                        <h3>Самовивіз</h3>
+                        <p>Самовивіз з нашого магазину в Києві:</p>
+                        <p>вул. Хрещатик, 10, з 10:00 до 20:00 щодня</p>
+                        <p>Вартість: безкоштовно</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="payment-section">
+                <h2 class="section-title">Способи оплати</h2>
+                
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <img src="img/card.png" alt="Оплата карткою" class="payment-icon">
+                        <h3>Оплата карткою онлайн</h3>
+                        <p>Visa, MasterCard через безпечний платіжний шлюз</p>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <img src="img/cash.png" alt="Готівка" class="payment-icon">
+                        <h3>Оплата готівкою</h3>
+                        <p>При отриманні замовлення у відділенні або у кур'єра</p>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <img src="img/privat24.png" alt="Приват24" class="payment-icon">
+                        <h3>Через Приват24</h3>
+                        <p>За реквізитами, вказаними у листі підтвердження</p>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <img src="img/invoice.png" alt="Рахунок" class="payment-icon">
+                        <h3>Безготівковий розрахунок</h3>
+                        <p>Для юридичних осіб за рахунком-фактурою</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="delivery-terms">
+                <h2 class="section-title">Умови доставки</h2>
+                
+                <div class="terms-info">
+                    <p>Термін доставки замовлення залежить від наявності товару на складі та обраного способу доставки.</p>
+                    <p>Якщо всі замовлені товари є в наявності на нашому складі, ваше замовлення буде передано у службу доставки протягом 24 годин з моменту оформлення.</p>
+                    <p>У разі відсутності товару на складі, менеджер зв'яжеться з вами для уточнення термінів доставки або можливої заміни.</p>
+                    <p>Доставка здійснюється по всій території України, за винятком тимчасово окупованих територій.</p>
+                    <p>При отриманні замовлення обов'язково перевірте комплектність і цілісність товару.</p>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <h2 class="section-title">Часті запитання</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Як я можу відстежити своє замовлення?</h3>
+                    <p class="faq-answer">Після відправлення замовлення ви отримаєте електронний лист з номером накладної для відстеження посилки. Також ви можете перевірити статус замовлення в особистому кабінеті.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Що робити, якщо товар прийшов пошкодженим?</h3>
+                    <p class="faq-answer">При виявленні пошкоджень необхідно зафіксувати їх у присутності представника служби доставки та зв'язатися з нашою службою підтримки за номером +38(044) 123-45-67.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Чи можна змінити адресу доставки після оформлення замовлення?</h3>
+                    <p class="faq-answer">Так, ви можете змінити адресу доставки, зв'язавшись з нами до моменту передачі замовлення у службу доставки.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Скільки днів зберігається замовлення у відділенні?</h3>
+                    <p class="faq-answer">Нова пошта зберігає посилки протягом 5 робочих днів безкоштовно, Укрпошта - 5 календарних днів.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Про компанію</h3>
+                    <p>© 2012 - 2025 ТОВ «BookWorld»</p>
+                    <p>info@bookworld.ua</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Навігація</h3>
+                    <a href="index.html">Головна</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="delivery.html">Доставка та оплата</a>
+                    <a href="cart.html">Кошик</a>
+                    <a href="#">Контакти</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Розробка сайту</h3>
+                    <p>Розробка «BookWorld Design»</p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2012 - 2025 ТОВ «BookWorld». Всі права захищені.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="callback-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">ЗВОРОТНИЙ ЗВ'ЯЗОК</h2>
+            <form id="callback-form">
+                <div class="modal-form-group">
+                    <label for="name">Ваше ім'я *</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <button type="submit" class="modal-btn">НАДІСЛАТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
