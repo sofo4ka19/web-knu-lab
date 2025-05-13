@@ -551,6 +551,7 @@ body {
     .footer-col {
         flex-basis: 50%;
         margin-bottom: 20px;
+        list-style: none;
     }
 }
 

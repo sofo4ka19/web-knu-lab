@@ -43,53 +43,87 @@
         </div>
     </nav>
 
+    <!-- Hero Banner -->
+    <div class="delivery-hero">
+        <div class="container">
+            <h1 class="delivery-hero-title">Доставка та оплата</h1>
+            <p class="delivery-hero-subtitle">Швидко, надійно, зручно</p>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main class="container">
         <div class="breadcrumbs">
             <a href="index.html">Головна</a> / <span>Доставка та оплата</span>
         </div>
         
-        <h1 class="page-title">Доставка та оплата</h1>
-        
         <div class="delivery-info">
             <section class="delivery-section">
                 <h2 class="section-title">Способи доставки</h2>
                 
-                <div class="delivery-method">
-                    <img src="img/nova-poshta.png" alt="Нова пошта" class="delivery-logo">
-                    <div class="delivery-details">
-                        <h3>Нова пошта</h3>
-                        <p>Доставка по всій Україні протягом 1-2 днів у відділення або поштомат.</p>
-                        <p>Вартість доставки: від 60 грн</p>
+                <div class="delivery-grid">
+                    <div class="delivery-method">
+                        <div class="delivery-method-icon">
+                            <img src="img/nova-poshta.png" alt="Нова пошта" class="delivery-logo">
+                        </div>
+                        <div class="delivery-details">
+                            <h3>Нова пошта</h3>
+                            <p>Доставка по всій Україні протягом 1-2 днів у відділення або поштомат.</p>
+                            <p class="delivery-price">Вартість доставки: від 60 грн</p>
+                            <div class="delivery-features">
+                                <span class="delivery-feature">1-2 дні</span>
+                                <span class="delivery-feature">Відділення</span>
+                                <span class="delivery-feature">Поштомат</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="delivery-method">
-                    <img src="img/ukrposhta.png" alt="Укрпошта" class="delivery-logo">
-                    <div class="delivery-details">
-                        <h3>Укрпошта</h3>
-                        <p>Доставка по всій Україні протягом 3-5 днів у відділення.</p>
-                        <p>Вартість доставки: від 40 грн</p>
+                    
+                    <div class="delivery-method">
+                        <div class="delivery-method-icon">
+                            <img src="img/ukrposhta.png" alt="Укрпошта" class="delivery-logo">
+                        </div>
+                        <div class="delivery-details">
+                            <h3>Укрпошта</h3>
+                            <p>Доставка по всій Україні протягом 3-5 днів у відділення.</p>
+                            <p class="delivery-price">Вартість доставки: від 40 грн</p>
+                            <div class="delivery-features">
+                                <span class="delivery-feature">3-5 днів</span>
+                                <span class="delivery-feature">Відділення</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 
-                <div class="delivery-method">
-                    <img src="img/courier.png" alt="Кур'єр" class="delivery-logo">
-                    <div class="delivery-details">
-                        <h3>Кур'єрська доставка</h3>
-                        <p>Доставка кур'єром по Києву протягом дня.</p>
-                        <p>Вартість доставки: 100 грн</p>
-                        <p>При замовленні від 1000 грн - безкоштовно</p>
+                    <div class="delivery-method">
+                        <div class="delivery-method-icon">
+                            <img src="img/courier.png" alt="Кур'єр" class="delivery-logo">
+                        </div>
+                        <div class="delivery-details">
+                            <h3>Кур'єрська доставка</h3>
+                            <p>Доставка кур'єром по Києву протягом дня.</p>
+                            <p class="delivery-price">Вартість доставки: 100 грн</p>
+                            <p class="delivery-promo">При замовленні від 1000 грн - безкоштовно</p>
+                            <div class="delivery-features">
+                                <span class="delivery-feature">В той же день</span>
+                                <span class="delivery-feature">Київ</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="delivery-method">
-                    <img src="img/pickup.png" alt="Самовивіз" class="delivery-logo">
-                    <div class="delivery-details">
-                        <h3>Самовивіз</h3>
-                        <p>Самовивіз з нашого магазину в Києві:</p>
-                        <p>вул. Хрещатик, 10, з 10:00 до 20:00 щодня</p>
-                        <p>Вартість: безкоштовно</p>
+                    
+                    <div class="delivery-method">
+                        <div class="delivery-method-icon">
+                            <img src="img/pickup.png" alt="Самовивіз" class="delivery-logo">
+                        </div>
+                        <div class="delivery-details">
+                            <h3>Самовивіз</h3>
+                            <p>Самовивіз з нашого магазину в Києві:</p>
+                            <p class="store-address">вул. Хрещатик, 10, з 10:00 до 20:00 щодня</p>
+                            <p class="delivery-price free">Вартість: безкоштовно</p>
+                            <div class="delivery-features">
+                                <span class="delivery-feature">Одразу</span>
+                                <span class="delivery-feature">Київ</span>
+                                <span class="delivery-feature">Безкоштовно</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -99,27 +133,77 @@
                 
                 <div class="payment-methods">
                     <div class="payment-method">
-                        <img src="img/card.png" alt="Оплата карткою" class="payment-icon">
+                        <div class="payment-icon">
+                            <img src="img/card.png" alt="Оплата карткою">
+                        </div>
                         <h3>Оплата карткою онлайн</h3>
                         <p>Visa, MasterCard через безпечний платіжний шлюз</p>
                     </div>
                     
                     <div class="payment-method">
-                        <img src="img/cash.png" alt="Готівка" class="payment-icon">
+                        <div class="payment-icon">
+                            <img src="img/cash.png" alt="Готівка">
+                        </div>
                         <h3>Оплата готівкою</h3>
                         <p>При отриманні замовлення у відділенні або у кур'єра</p>
                     </div>
                     
                     <div class="payment-method">
-                        <img src="img/privat24.png" alt="Приват24" class="payment-icon">
+                        <div class="payment-icon">
+                            <img src="img/privat24.png" alt="Приват24">
+                        </div>
                         <h3>Через Приват24</h3>
                         <p>За реквізитами, вказаними у листі підтвердження</p>
                     </div>
                     
                     <div class="payment-method">
-                        <img src="img/invoice.png" alt="Рахунок" class="payment-icon">
+                        <div class="payment-icon">
+                            <img src="img/invoice.png" alt="Рахунок">
+                        </div>
                         <h3>Безготівковий розрахунок</h3>
                         <p>Для юридичних осіб за рахунком-фактурою</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="delivery-process">
+                <h2 class="section-title">Як ми працюємо</h2>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <img src="img/cart-icon.png" alt="Кошик">
+                        </div>
+                        <h3>Оформлення замовлення</h3>
+                        <p>Виберіть товари та оформіть замовлення на сайті</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <img src="img/call-icon.png" alt="Дзвінок">
+                        </div>
+                        <h3>Підтвердження</h3>
+                        <p>Наш менеджер зв'яжеться з вами для підтвердження</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <img src="img/box-icon.png" alt="Пакування">
+                        </div>
+                        <h3>Пакування</h3>
+                        <p>Ми дбайливо пакуємо ваше замовлення</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <img src="img/delivery-icon.png" alt="Доставка">
+                        </div>
+                        <h3>Доставка</h3>
+                        <p>Відправляємо замовлення обраним способом доставки</p>
                     </div>
                 </div>
             </section>
@@ -128,35 +212,81 @@
                 <h2 class="section-title">Умови доставки</h2>
                 
                 <div class="terms-info">
-                    <p>Термін доставки замовлення залежить від наявності товару на складі та обраного способу доставки.</p>
-                    <p>Якщо всі замовлені товари є в наявності на нашому складі, ваше замовлення буде передано у службу доставки протягом 24 годин з моменту оформлення.</p>
-                    <p>У разі відсутності товару на складі, менеджер зв'яжеться з вами для уточнення термінів доставки або можливої заміни.</p>
-                    <p>Доставка здійснюється по всій території України, за винятком тимчасово окупованих територій.</p>
-                    <p>При отриманні замовлення обов'язково перевірте комплектність і цілісність товару.</p>
+                    <div class="terms-card">
+                        <h3>Терміни обробки</h3>
+                        <p>Термін доставки замовлення залежить від наявності товару на складі та обраного способу доставки.</p>
+                        <p>Якщо всі замовлені товари є в наявності на нашому складі, ваше замовлення буде передано у службу доставки протягом 24 годин з моменту оформлення.</p>
+                    </div>
+                    
+                    <div class="terms-card">
+                        <h3>Наявність товару</h3>
+                        <p>У разі відсутності товару на складі, менеджер зв'яжеться з вами для уточнення термінів доставки або можливої заміни.</p>
+                    </div>
+                    
+                    <div class="terms-card">
+                        <h3>Географія доставки</h3>
+                        <p>Доставка здійснюється по всій території України, за винятком тимчасово окупованих територій.</p>
+                    </div>
+                    
+                    <div class="terms-card">
+                        <h3>Перевірка при отриманні</h3>
+                        <p>При отриманні замовлення обов'язково перевірте комплектність і цілісність товару.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="map-section">
+                <h2 class="section-title">Наш магазин на мапі</h2>
+                <div class="map-container">
+                    <img src="img/map.png" alt="Карта розташування магазину" class="store-map">
+                </div>
+                <div class="store-info">
+                    <div class="store-info-item">
+                        <h3>Адреса</h3>
+                        <p>м. Київ, вул. Хрещатик, 10</p>
+                    </div>
+                    <div class="store-info-item">
+                        <h3>Години роботи</h3>
+                        <p>Пн-Нд: 10:00 - 20:00</p>
+                    </div>
+                    <div class="store-info-item">
+                        <h3>Телефон</h3>
+                        <p>+38(044) 123-45-67</p>
+                    </div>
                 </div>
             </section>
             
             <section class="faq-section">
                 <h2 class="section-title">Часті запитання</h2>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Як я можу відстежити своє замовлення?</h3>
-                    <p class="faq-answer">Після відправлення замовлення ви отримаєте електронний лист з номером накладної для відстеження посилки. Також ви можете перевірити статус замовлення в особистому кабінеті.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Що робити, якщо товар прийшов пошкодженим?</h3>
-                    <p class="faq-answer">При виявленні пошкоджень необхідно зафіксувати їх у присутності представника служби доставки та зв'язатися з нашою службою підтримки за номером +38(044) 123-45-67.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Чи можна змінити адресу доставки після оформлення замовлення?</h3>
-                    <p class="faq-answer">Так, ви можете змінити адресу доставки, зв'язавшись з нами до моменту передачі замовлення у службу доставки.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Скільки днів зберігається замовлення у відділенні?</h3>
-                    <p class="faq-answer">Нова пошта зберігає посилки протягом 5 робочих днів безкоштовно, Укрпошта - 5 календарних днів.</p>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="faq-question">Як я можу відстежити своє замовлення?</h3>
+                        <div class="faq-answer">
+                            <p>Після відправлення замовлення ви отримаєте електронний лист з номером накладної для відстеження посилки. Також ви можете перевірити статус замовлення в особистому кабінеті.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Що робити, якщо товар прийшов пошкодженим?</h3>
+                        <div class="faq-answer">
+                            <p>При виявленні пошкоджень необхідно зафіксувати їх у присутності представника служби доставки та зв'язатися з нашою службою підтримки за номером +38(044) 123-45-67.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Чи можна змінити адресу доставки після оформлення замовлення?</h3>
+                        <div class="faq-answer">
+                            <p>Так, ви можете змінити адресу доставки, зв'язавшись з нами до моменту передачі замовлення у службу доставки.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Скільки днів зберігається замовлення у відділенні?</h3>
+                        <div class="faq-answer">
+                            <p>Нова пошта зберігає посилки протягом 5 робочих днів безкоштовно, Укрпошта - 5 календарних днів.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
