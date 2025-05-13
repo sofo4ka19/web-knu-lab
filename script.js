@@ -140,3 +140,10 @@ document.addEventListener('DOMContentLoaded', function() {
     initSlider();
     setupPagination();
 });
+const burgerMenu = document.querySelector('.burger-menu');
+const navList = document.querySelector('.nav-list');
+
+burgerMenu.addEventListener('click', function() {
+    navList.classList.toggle('show');
+    burgerMenu.classList.toggle('active');
+});
