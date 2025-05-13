@@ -107,12 +107,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #3498db; */
     background-size: cover;
     background-position: center;
 }
 .slide.active {
     opacity: 1;
+    transition: opacity 0.5s;
 }
 .slider-nav {
     position: absolute;

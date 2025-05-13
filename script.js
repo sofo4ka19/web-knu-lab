@@ -32,68 +32,58 @@ const prevBtn = document.getElementById('prev-slide');
 const nextBtn = document.getElementById('next-slide');
 const dotsContainer = document.querySelector('.slider-dots');
 let currentSlide = 0;
-let slideInterval;
+let slideTimer;
 
-function createDots() {
+function initSlider() {
+    // Створення крапок
     slides.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.classList.add('slider-dot');
-        if (index === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-            showSlide(index);
-            resetInterval();
-        });
+        dot.addEventListener('click', () => goToSlide(index));
         dotsContainer.appendChild(dot);
+    });
+    
+    goToSlide(0);
+    
+    prevBtn.addEventListener('click', () => {
+        goToSlide(currentSlide - 1);
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        goToSlide(currentSlide + 1);
     });
 }
 
-function showSlide(n) {
+// Функція для показу конкретного слайда
+function goToSlide(index) {
+    // Видаляємо активний клас з усіх слайдів та крапок
     slides.forEach(slide => {
-        slide.style.opacity = '0';
         slide.classList.remove('active');
     });
     
     const dots = document.querySelectorAll('.slider-dot');
     dots.forEach(dot => dot.classList.remove('active'));
     
-    currentSlide = (n + slides.length) % slides.length;
-    
-    // Додаємо fade ефект
-    slides[currentSlide].style.opacity = '0';
+    // Обчислюємо індекс нового слайда
+    currentSlide = (index + slides.length) % slides.length;
+     
     slides[currentSlide].classList.add('active');
-    
-    // Використовуємо setTimeout для плавного переходу
-    setTimeout(() => {
-        slides[currentSlide].style.opacity = '1';
-    }, 10);
     dots[currentSlide].classList.add('active');
+    
+    // Скидаємо таймер
+    resetTimer();
 }
 
-function nextSlide() {
-    showSlide(currentSlide + 1);
+// Функція для скидання таймера
+function resetTimer() {
+    clearTimeout(slideTimer);
+    slideTimer = setTimeout(() => {
+        goToSlide(currentSlide + 1);
+    }, 4000);
 }
-function resetInterval() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(4000);
-}
-createDots();
-showSlide(0);
-resetInterval();
 
-prevBtn.addEventListener('click', () => {
-    showSlide(currentSlide - 1);
-    resetInterval()
-});
-
-nextBtn.addEventListener('click', () => {
-    showSlide(currentSlide + 1);
-    resetInterval()
-});
-
-// Auto slide
-setInterval(() => {
-    showSlide(currentSlide + 1);
-}, 4000);
+// Ініціалізація слайдера при завантаженні
+document.addEventListener('DOMContentLoaded', initSlider);
 
 //Pagination
 // Додати код для пагінації книг
