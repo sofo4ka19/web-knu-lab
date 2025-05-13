@@ -30,10 +30,10 @@
     <nav class="nav">
         <div class="container">
             <ul class="nav-list">
-                <li class="nav-item "><a href="index.html" class="nav-link active">Головна</a></li>
+                <li class="nav-item "><a href="index.html" class="nav-link">Головна</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Каталог</a></li>
                 <li class="nav-item"><a href="delivery.html" class="nav-link">Доставка та оплата</a></li>
-                <li class="nav-item"><a href="cart.html" class="nav-link">Кошик</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link active">Кошик</a></li>
             </ul>
         </div>
         <div class="burger-menu">
@@ -43,23 +43,6 @@
         </div>
     </nav>
 
-    <!-- Hero Slider -->
-    <section class="hero">
-        <div class="slider">
-            <img class="slide" src="img/slider1.avif">
-            <img class="slide" src="img/slider2.avif">
-            <img class="slide" src="img/slider3.avif">
-            <img class="slide" src="img/slider4.avif">
-            <img class="slide" src="img/slider5.avif">
-            <img class="slide active" src="img/slider6.avif">
-        </div>
-        <div class="slider-nav">
-            <button id="prev-slide">&#x2B9C;</button>
-            <button id="next-slide">&#x2B9E;</button>
-        </div>
-        <div class="slider-dots"></div>
-    </section>
-
     <!-- Main Content -->
     <main class="container">
         <div class="breadcrumbs">
@@ -68,18 +51,6 @@
         
         <div class="cart-container">
             <h1 class="cart-title">Кошик</h1>
-            
-            <!-- Якщо кошик порожній -->
-            <div class="cart-empty" style="display: none;">
-                <div class="cart-empty-icon">
-                    <img src="img/empty-cart.png" alt="Порожній кошик">
-                </div>
-                <h2>Ваш кошик порожній</h2>
-                <p>Але це ніколи не пізно виправити!</p>
-                <a href="catalog.html" class="continue-shopping-btn">Перейти до каталогу</a>
-            </div>
-            
-            <!-- Якщо в кошику є товари -->
             <div class="cart-content">
                 <div class="cart-items">
                     <!-- Заголовки таблиці -->
@@ -96,7 +67,7 @@
                         <div class="cart-col cart-product-col">
                             <div class="cart-product-info">
                                 <div class="cart-product-image">
-                                    <img src="img/book1.jpg" alt="Книга 1">
+                                    <img src="img/harryPotter1.jpg" alt="Книга 1">
                                 </div>
                                 <div class="cart-product-details">
                                     <h3 class="cart-product-title">Гаррі Поттер і філософський камінь</h3>
@@ -127,7 +98,7 @@
                         <div class="cart-col cart-product-col">
                             <div class="cart-product-info">
                                 <div class="cart-product-image">
-                                    <img src="img/book2.jpg" alt="Книга 2">
+                                    <img src="img/1984.jpg" alt="Книга 2">
                                 </div>
                                 <div class="cart-product-details">
                                     <h3 class="cart-product-title">1984</h3>
@@ -158,11 +129,11 @@
                         <div class="cart-col cart-product-col">
                             <div class="cart-product-info">
                                 <div class="cart-product-image">
-                                    <img src="img/book3.jpg" alt="Книга 3">
+                                    <img src="img/kidruk.JPG" alt="Книга 3">
                                 </div>
                                 <div class="cart-product-details">
-                                    <h3 class="cart-product-title">Майстер і Маргарита</h3>
-                                    <p class="cart-product-author">Михайло Булгаков</p>
+                                    <h3 class="cart-product-title">Не озирайся і мовчи</h3>
+                                    <p class="cart-product-author">Макс Кідрук</p>
                                 </div>
                             </div>
                         </div>
@@ -208,8 +179,8 @@
                             <span>Загальна сума:</span>
                             <span class="total-price">1250 грн</span>
                         </div>
-                        <a href="checkout.html" class="checkout-btn">Оформити замовлення</a>
-                        <a href="catalog.html" class="continue-shopping-link">Продовжити покупки</a>
+                        <a href="#" class="checkout-btn">Оформити замовлення</a>
+                        <a href="index.html" class="continue-shopping-link">Продовжити покупки</a>
                     </div>
                 </div>
             </div>
@@ -221,7 +192,7 @@
                 <!-- Рекомендований товар 1 -->
                 <div class="product">
                     <div class="product-img">
-                        <img src="img/book4.jpg" alt="Книга 4">
+                        <img src="img/littlePrince.jpg" alt="Книга 4">
                     </div>
                     <h3 class="product-title">Маленький принц</h3>
                     <p class="product-price">220 грн</p>
@@ -231,9 +202,9 @@
                 <!-- Рекомендований товар 2 -->
                 <div class="product">
                     <div class="product-img">
-                        <img src="img/book5.jpg" alt="Книга 5">
+                        <img src="img/shatterMe.webp" alt="Книга 5">
                     </div>
-                    <h3 class="product-title">Ідіот</h3>
+                    <h3 class="product-title">Розгадай мене</h3>
                     <p class="product-price">280 грн</p>
                     <button class="product-btn">Додати в кошик</button>
                 </div>
@@ -241,9 +212,9 @@
                 <!-- Рекомендований товар 3 -->
                 <div class="product">
                     <div class="product-img">
-                        <img src="img/book6.jpg" alt="Книга 6">
+                        <img src="img/leaveIfLove.jpg" alt="Книга 6">
                     </div>
-                    <h3 class="product-title">Тіні забутих предків</h3>
+                    <h3 class="product-title">Покинь, якщо кохаєш</h3>
                     <p class="product-price">240 грн</p>
                     <button class="product-btn">Додати в кошик</button>
                 </div>
