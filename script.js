@@ -84,7 +84,6 @@ function resetTimer() {
 
 
 //Pagination
-// Додати код для пагінації книг
 function setupPagination() {
     const productsContainer = document.querySelector('.products');
     const allProducts = Array.from(productsContainer.querySelectorAll('.product'));
@@ -133,27 +132,9 @@ function setupPagination() {
         });
     }
     
-    // Показуємо першу сторінку за замовчуванням
     showPage(1);
 }
 document.addEventListener('DOMContentLoaded', function() {
     initSlider();
     setupPagination();
-});
-
-// Burger-menu improved functionality
-const burgerMenu = document.querySelector('.burger-menu');
-const navList = document.querySelector('.nav-list');
-
-burgerMenu.addEventListener('click', function() {
-    navList.classList.toggle('show');
-    burgerMenu.classList.toggle('active');
-});
-
-// Close menu when clicking outside
-document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav') && navList.classList.contains('show')) {
-        navList.classList.remove('show');
-        burgerMenu.classList.remove('active');
-    }
 });
